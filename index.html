@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleHub - Online Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        Style<span>Hub</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-icons">
+
+        <button id="searchBtn">🔍</button>
+
+        <button id="wishlistBtn">
+            ❤️ <span id="wishlistCount">0</span>
+        </button>
+
+        <button id="cartBtn">
+            🛒 <span id="cartCount">0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">NEW COLLECTION 2026</p>
+
+        <h1>
+            Discover Your
+            <span>Perfect Style</span>
+        </h1>
+
+        <p>
+            Trendy fashion, premium quality and affordable prices.
+            Upgrade your wardrobe today.
+        </p>
+
+        <a href="#shop" class="shop-btn">
+            Shop Now →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories" id="categories">
+
+    <h2>Shop By Category</h2>
+
+    <p class="section-subtitle">
+        Find your perfect style
+    </p>
+
+    <div class="category-container">
+
+        <button class="category-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="category-btn" data-category="women">
+            Women
+        </button>
+
+        <button class="category-btn" data-category="men">
+            Men
+        </button>
+
+        <button class="category-btn" data-category="dresses">
+            Dresses
+        </button>
+
+        <button class="category-btn" data-category="shirts">
+            Shirts
+        </button>
+
+        <button class="category-btn" data-category="jeans">
+            Jeans
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHOP ================= -->
+
+<section class="shop" id="shop">
+
+    <div class="shop-heading">
+
+        <div>
+            <h2>Our Collection</h2>
+
+            <p>
+                Latest fashion for every occasion
+            </p>
+        </div>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search clothes..."
+            >
+
+        </div>
+
+    </div>
+
+
+    <div class="products" id="products">
+
+        <!-- Products generated using JavaScript -->
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-content">
+
+        <h2>Why Choose StyleHub?</h2>
+
+        <p>
+            At StyleHub, we believe fashion should be stylish,
+            comfortable and affordable. Our collection is carefully
+            selected to bring you the latest fashion trends.
+        </p>
+
+        <div class="features">
+
+            <div>
+                <span>🚚</span>
+                <h3>Free Shipping</h3>
+                <p>On orders above ₹999</p>
+            </div>
+
+            <div>
+                <span>🔄</span>
+                <h3>Easy Returns</h3>
+                <p>7-day easy return</p>
+            </div>
+
+            <div>
+                <span>🔒</span>
+                <h3>Secure Payment</h3>
+                <p>100% secure checkout</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <h2>Get 10% Off Your First Order</h2>
+
+    <p>
+        Subscribe to our newsletter for exclusive offers.
+    </p>
+
+    <div class="newsletter-form">
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+        >
+
+        <button onclick="subscribe()">
+            Subscribe
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h2>StyleHub</h2>
+
+            <p>
+                Your destination for modern fashion.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Customer Service</h3>
+
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social">
+
+                <span>Instagram</span>
+                <span>Facebook</span>
+                <span>Twitter</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 StyleHub. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">
+            ✕
+        </button>
+
+    </div>
+
+
+    <div id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+
+    <div class="cart-bottom">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CHECKOUT MODAL ================= -->
+
+<div class="modal" id="checkoutModal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" onclick="closeCheckout()">
+            ✕
+        </button>
+
+        <h2>Checkout</h2>
+
+        <p>Enter your delivery details</p>
+
+        <input
+            type="text"
+            placeholder="Full Name"
+        >
+
+        <input
+            type="text"
+            placeholder="Phone Number"
+        >
+
+        <input
+            type="text"
+            placeholder="Address"
+        >
+
+        <input
+            type="text"
+            placeholder="City"
+        >
+
+        <input
+            type="text"
+            placeholder="PIN Code"
+        >
+
+        <button class="place-order" onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
