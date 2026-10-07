@@ -15,7 +15,7 @@ const products = [
 
     {
         id: 2,
-        name: "Classic White Shirt",
+        name: "Classic Shirts",
         category: "shirts",
         gender: "men",
         price: 899,
@@ -33,7 +33,7 @@ const products = [
 
     {
         id: 4,
-        name: "Elegant Black Dress",
+        name: "Elegant Dresses",
         category: "dresses",
         gender: "women",
         price: 1799,
@@ -78,7 +78,7 @@ const products = [
 
     {
         id: 9,
-        name: "Pink Party Dress",
+        name: "Party Dresses",
         category: "dresses",
         gender: "women",
         price: 1899,
